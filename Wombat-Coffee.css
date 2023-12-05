@@ -1,10 +1,14 @@
 :root {
-  font-size: calc(0.5em + 1vw);
+  font-size: clamp(0.75rem, 0.5rem + 1.5vw, 15rem);
+  line-height: 1.2;
+  --light-bg: #fff;
+  --main-color: #000;
 }
 
 body {
   font-family: sans-serif;
 }
+
 h1 {
   color: #2f4f4f;
   margin-bottom: 10px;
@@ -40,15 +44,18 @@ nav a {
   border-radius: 0.125em;
   text-decoration: none;
 }
+
 p .featured {
-  box-shadow: 10px 2px #6f9090;
+  box-shadow: 4px 4px #c28f43;
 }
 
 .panel {
   font-size: 1rem;
   padding: 1em;
-  border-radius: 0.5em;
   border: 1px solid #999;
+  border-radius: 0.5em;
+  background-color: var(--light-bg);
+  color: var(--main-color);
 }
 
 .panel > h2 {
@@ -60,6 +67,18 @@ p .featured {
 
 .panel.large {
   font-size: 1.2rem;
+}
+
+.dark {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: #999;
+  --light-bg:
+  --main-color:#fff;
+}
+
+.about-us {
+  font-size: 2em;
 }
 
 a:link {

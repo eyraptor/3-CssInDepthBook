@@ -1,5 +1,11 @@
-* {
+:root {
   box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -19,16 +25,19 @@ main {
   display: block;
 }
 
+.container {
+  display: flex;
+}
+
 .main {
-  float: left;
   width: 70%;
   background-color: #fff;
   border-radius: .5em;
 }
 
 .sidebar {
-  float: left;
   width: 30%;
+  margin-left: 1.5em;
   padding: 1.5em;
   background-color: #fff;
   border-radius: .5em;

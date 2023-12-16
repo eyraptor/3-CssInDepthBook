@@ -16,6 +16,7 @@ body {
 }
 
 header {
+  padding: 1em 1.5em;
   background-color: #216DAE;
   color: #fff;
   border-radius: .5em;
@@ -37,8 +38,22 @@ main {
 
 .sidebar {
   width: 30%;
-  margin-left: 1.5em;
   padding: 1.5em;
+  margin-left: 1.5em;
   background-color: #fff;
   border-radius: .5em;
+}
+
+.button-link {
+  display: block;
+  padding: 0.5em;
+  color: #fff;
+  background-color: #0090c9;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-link + .button-link {
+  margin-top: 1em;
 }

@@ -1,0 +1,28 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: inherit;
+}
+
+h1 {
+  border: 5px solid green;
+  margin-top: calc(50dvh - 44px);
+  margin-bottom: calc(50dvh - 44px);
+  background-color: blue;
+  font-size: 3em;
+  line-height: 2em;
+}
+
+h1 {
+  text-align: center;
+  background-color: red;
+}
